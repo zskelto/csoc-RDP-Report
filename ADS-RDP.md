@@ -11,12 +11,14 @@ The strategy will function as follows:
 * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\fDenyTSConnection should be set to 1.
 
 # Technical Context
-Technical Context provides detailed information and background needed for a responder to understand all components of the alert. This should appropriately link to any platform or tooling knowledge and should include information about the direct aspects of the alert. The goal of the Technical Context section is to provide a self-contained reference for a responder to make a judgement call on any potential alert, even if they do not have direct subject matter expertise on the ADS itself.
+[Remote Desktop Protocol](https://docs.microsoft.com/en-us/windows/desktop/termserv/remote-desktop-protocol) is a built-in Windows tool for controlling the GUI from a remote location.
+
+
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
 
-* 
+* No legitimate user will be connecting to their work computer via remote desktop.
 
 A blind spot will occur if any of the assumptions are violated. For instance, the following would not trip the alert:
 
