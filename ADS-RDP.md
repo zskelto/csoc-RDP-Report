@@ -15,7 +15,7 @@ The strategy will function as follows:
 # Technical Context
 [Remote Desktop Protocol](https://docs.microsoft.com/en-us/windows/desktop/termserv/remote-desktop-protocol) is a built-in Windows tool for controlling the GUI from a remote location.
 
-
+When in use, it is commonly used to work remotely or receive remote help from the IT department. 
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
