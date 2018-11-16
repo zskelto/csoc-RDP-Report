@@ -8,8 +8,10 @@ These attempts are categorized as [Lateral Movement / Remote Destop Protocol](ht
 The strategy will function as follows:
 
 * Monitor any activity over TCP and UDP port 3389.
+* Scan for network devices with port 3389 open.
 * Set up process monitoring for tscon.exe.
 * Monitor services starting with cmd.exe /k or cmd.exe /c.
+* Disable RDP unless it is essential.
 
 # Technical Context
 [Remote Desktop Protocol](https://docs.microsoft.com/en-us/windows/desktop/termserv/remote-desktop-protocol) is a built-in Windows tool that allows a user to start an interactive session with a desktop GUI on a remote system and commonly runs on TCP/UDP port 3389. When in use, it is commonly used to work remotely or receive remote help from the IT department. 
