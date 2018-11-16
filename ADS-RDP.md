@@ -8,7 +8,6 @@ These attempts are categorized as [Lateral Movement / Remote Destop Protocol](ht
 The strategy will function as follows:
 
 * Monitor any activity over TCP and UDP port 3389.
-* HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\fDenyTSConnection should be set to 1.
 * Set up process monitoring for tscon.exe.
 * Monitor services starting with cmd.exe /k or cmd.exe /c.
 
@@ -45,10 +44,14 @@ The priority is set to high under the following conditions:
 
 The priority is set to medium under the following conditions:
 
-* HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\fDenyTSConnection is set to 1.
+* HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\fDenyTSConnection is set to 0.
 
 # Validation
+RDP is enabled on the computer if the following command returns 0:
 
+```
+reg query "HKLM\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnection 
+```
 
 # Response
 The following actions are recommended to be taken if the alert fires:
