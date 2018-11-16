@@ -19,9 +19,12 @@ Attackers can use RDP to connect to a remote system and gain expanded access. At
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
 
-
+* Process monitoring is active.
+* Network traffic is being monitored.
 
 A blind spot will occur if any of the assumptions are violated. For instance, the following would not trip the alert:
+
+* Process monitoring has been deactivated.
 
 # False Positives
 There are several instances where false positives will occur:
