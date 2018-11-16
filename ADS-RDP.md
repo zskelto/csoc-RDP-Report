@@ -29,14 +29,14 @@ Adversary can run the following command once he/she acquires the session key: :\
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
 
-* No legitimate user will be connecting to their work computer via remote desktop.
+
 
 A blind spot will occur if any of the assumptions are violated. For instance, the following would not trip the alert:
 
 # False Positives
 There are several instances where false positives will occur:
 
-* Users working from home using RDP will cause traffic over 3389 and a modified fDenyTSConnection value.
+* Users working from home.
 
 # Priority
 The priority is set to high under the following conditions:
