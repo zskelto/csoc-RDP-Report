@@ -31,6 +31,7 @@ A blind spot will occur if any of the assumptions are violated. For instance, th
 There are several instances where false positives will occur:
 
 * Users working from home.
+* The CCIT Support Center uses RDP to provide remote assistance. The remote host is accessed through a 3rd party software called “Bomgar”. Bomgar uses the RDP port but bypasses VPN tunneling, port forwarding, and a need to configure the firewall. 
 
 # Priority
 The priority is set to high under the following conditions:
