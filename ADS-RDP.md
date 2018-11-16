@@ -13,9 +13,18 @@ The strategy will function as follows:
 * Monitor services starting with cmd.exe /k or cmd.exe /c.
 
 # Technical Context
-[Remote Desktop Protocol](https://docs.microsoft.com/en-us/windows/desktop/termserv/remote-desktop-protocol) is a built-in Windows tool for controlling the GUI from a remote location.
+[Remote Desktop Protocol](https://docs.microsoft.com/en-us/windows/desktop/termserv/remote-desktop-protocol) is a built-in Windows tool that allows a user to start an interactive session with a desktop GUI on a remote system and commonly runs on TCP/UDP port 3389.
 
 When in use, it is commonly used to work remotely or receive remote help from the IT department. 
+
+
+Attackers can use RDP to connect to a remote system and gain expanded access. Attackers can use RDP in conjunction with Credential Access techniques and Accessibility Features. Attackers can easily perform RDP session hijacking by stealing a legitimate user’s remote session or credentials.
+
+Stealing Session Key: 
+Adversary can run the following command once he/she acquires the session key: :\windows\system32\tscon.exe [session number to be stolen]
+
+
+
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
