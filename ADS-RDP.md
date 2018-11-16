@@ -59,3 +59,8 @@ The following actions are recommended to be taken if the alert fires:
   * -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" –Value 1
 
 # Additional Resources
+[General Detection Information](https://www.novetta.com/2015/03/advanced-methods-to-detect-advanced-cyber-attacks-rdp-keyboard-layout/)
+[TSCON](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon)
+[Bomgar](https://www.bomgar.com/remote-support/features/remote-desktop-protocol-rdp)
+[Flow Detection of RDP](https://is.muni.cz/repo/1112279/Flow-based_detection_of_RDP_brute_force-attacks.pdf)
+[MITRE Details](https://attack.mitre.org/techniques/T1076/)
