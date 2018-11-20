@@ -62,6 +62,9 @@ RDP is enabled on the computer if the following command returns 0:
 ```
 reg query "HKLM\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnection 
 ```
+For detecting brute force, start an RDP connection to a windows machine with RDP enabled. Then enter invalid login credentials. Inspect the flow search between the IP of the remote computer and the user's computer on port 3389 of the remote computer. There will be an example of a failed connection, where no packets are sent between computers.
+
+For network scanning, try connecting with RDP to a few machines with invalid credentials. Inspect the flow search of the IP attempting to connect. There will be several events of the IP connecting to other machines, but with no packets being delivered.
 
 # Response
 The following actions are recommended to be taken if the alert fires:
